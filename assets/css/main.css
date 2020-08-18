@@ -1,0 +1,16 @@
+:root {
+  --main-bg: #111;
+  --fcolor: #fff;
+  --fcolor2: #14fdc0;
+  --font-copy: "gintronic", monospace;
+  --font-hl: "Work Sans", sans-serif;
+  --main-border: #fff;
+  --hover: #14fec0;
+}
+
+body {
+}
+
+.font-hl {
+  font-family: var(--font-hl);
+}
