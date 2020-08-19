@@ -3,19 +3,29 @@
 head.html -%}
 
 <body class="font-copy">
-  {%- include header.html -%}
-
-  <main class="page-content" aria-label="Content">
+  <main id="swup" class="page-content transition-fade" aria-label="Content">
     <div class="wrapper">
       <div class="vh-100">
         <div class="mh3 bb bw1 main-border flex justify-between items-end">
           <div class="">
-            <h1 class="lack f1 fw4 pb0 mt3 mb1 font-hl ttu tracked">
-              digital type design
-            </h1>
+            <a href="{{ site.url }}" class="link">
+              <h1
+                class="{{ page.font }} f1 fw4 pb0 mt3 mb1 font-hl ttu tracked"
+              >
+                {% if page.japanese == true %} デジタルデザイン {% else %}
+                digital type design {% endif %}
+              </h1>
+            </a>
           </div>
-          <div class="">
-            <h1 class="font-hl f1 mt3 mb1">01</h1>
+          <div class="hide-child flex">
+            <a
+              href="/{{ page.prev }}"
+              class="child f1 font-hl f1 mt3 mb1 link mr3 pointer"
+              ><</a
+            >
+            <a href="/{{ page.next }}" class="link pointer">
+              <h1 class="font-hl f1 mt3 mb1">{{ page.num }}</h1>
+            </a>
           </div>
         </div>
         <div class="flex pa3 pt6">
