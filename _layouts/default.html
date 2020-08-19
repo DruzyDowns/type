@@ -7,7 +7,29 @@ head.html -%}
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
-      {{ content }}
+      <div class="vh-100">
+        <div class="mh3 bb bw1 main-border flex justify-between items-end">
+          <div class="">
+            <h1 class="lack f1 fw4 pb0 mt3 mb1 font-hl ttu tracked">
+              digital type design
+            </h1>
+          </div>
+          <div class="">
+            <h1 class="font-hl f1 mt3 mb1">01</h1>
+          </div>
+        </div>
+        <div class="flex pa3 pt6">
+          <div class="w-50 flex items-end">
+            {% include frame.html %}
+            <p class="vertical flip font-hl f5 ma0 ml2">
+              {{ page.caption }}
+            </p>
+          </div>
+          <div class="w-50 ph4">
+            {{ content }}
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 

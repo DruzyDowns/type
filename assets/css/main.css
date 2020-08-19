@@ -1,7 +1,27 @@
 @font-face {
-  src: url(Inter.var.woff2);
+  src: url(fonts/Inter.var.woff2);
   font-family: inter-var;
   font-weight: 400;
+}
+@font-face {
+  src: url(fonts/Typefesse_Claire-Obscure.otf);
+  font-family: typefesse;
+  font-weight: 400;
+}
+@font-face {
+  src: url(fonts/lack-regular-webfont.woff);
+  font-family: lack;
+  font-weight: 400;
+}
+@font-face {
+  src: url(assets/css/fonts/SportingGrotesque-Regular.otf);
+  font-family: sporting;
+  font-weight: 400;
+}
+@font-face {
+  src: url(assets/css/fonts/SportingGrotesque-Bold.otf);
+  font-family: sporting-bold;
+  font-weight: 700;
 }
 @import url("https://rsms.me/inter/inter.css");
 html {
@@ -39,6 +59,18 @@ body {
 
 .inter {
   font-family: "Inter", sans-serif;
+}
+.typefesse {
+  font-family: "typefesse", sans-serif;
+}
+.lack {
+  font-family: "lack", sans-serif;
+}
+.lack {
+  font-family: "sporting", sans-serif;
+}
+.lack {
+  font-family: "sporting-bold", sans-serif;
 }
 
 .inter-var {
