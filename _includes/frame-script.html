@@ -1,0 +1,16 @@
+<script type="text/javascript">
+  window.onload = function () {
+    var img = document.querySelector("img.frame-image");
+    var aTag = document.querySelector("a.frame-link");
+
+    var dingbats = document.querySelector("a.dingbats");
+
+    dingbats.addEventListener("mouseover", function () {
+      img.src = "/assets/img/dingbats.png";
+    });
+
+    aTag.addEventListener("mouseleave", function () {
+      img.src = "/assets/img/{{page.frame}}";
+    });
+  };
+</script>

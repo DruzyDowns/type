@@ -2,16 +2,44 @@
 layout: default
 font: sporting
 headline: digitales schriftdesign
-frame: univers.jpg
-caption: univers
+frame: zapf.jpg
+caption: Hermann Zapf & Gudrun Zapf-von Hesse
 num: "02"
 next: "03"
-prev: "index.html"
+prev: "01"
 ---
 
 <h3 class="sporting-bold f3 mt0 ttu tracked lh-title">
-  A Brief history
+  Hermann & Gudrun Zapf
 </h3>
-<p class="sporting f4 fw4 lh-copy">
-  In which we will discuss Dingbats, Wingdings, and Webdings
+<p class="inter f4 fw4 lh-copy">
+  Hermann Zapf's career spanned decades of progress, from traditional lead type,
+  to the inception of the Apple Mac and beyond.
 </p>
+<p class="inter f4 fw4 lh-copy">
+  <a href="#" class="dingbats link hover-type font-hl frame-link underline"
+    >Dingbats</a
+  >, a collection of symbols for supplementing type, was a stepping stone in the
+  path to the modern emoji we know and love today.
+</p>
+<p class="inter f4 fw4 lh-copy">
+  Zapf was an early adopter of computing technology, but was dismissed by his
+  colleagues as crazy for his interest in producing type digitally.
+</p>
+
+<script type="text/javascript">
+  window.onload = function () {
+    var img = document.querySelector("img.frame-image");
+    var aTag = document.querySelector("a.frame-link");
+
+    var dingbats = document.querySelector("a.dingbats");
+
+    dingbats.addEventListener("mouseover", function () {
+      img.src = "/assets/img/dingbats.png";
+    });
+
+    aTag.addEventListener("mouseleave", function () {
+      img.src = "/assets/img/{{page.frame}}";
+    });
+  };
+</script>

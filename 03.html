@@ -1,20 +1,65 @@
 ---
 layout: default
-font: lack
-headline: digitales schriftdesign
-frame: zapf.jpg
-caption: Hermann Zapf & Gudrun Zapf-von Hesse
+font: mister
+headline: digital type design
+frame: susan.jpg
+caption: Susan Kare circa 1985
 num: "03"
 next: "04"
 prev: "02"
 ---
 
 <h3 class="sporting-bold f3 mt0 ttu tracked lh-title">
-  Hermann & Gudrun Zapf, Wingdings and... aliens
+  Susan Kare and the first Apple GUI
 </h3>
-<p class="sporting f4 fw4 lh-copy">
-  In which we will discuss Dingbats, Wingdings, and Webdings, and some
-  mysterious hidden parts of digital fonts that are rarely seen – and also how
-  Herman and Gudrun made their mark on culture during the transition from print
-  to digital media.
+<p class="inter f4 fw4 lh-copy">
+  Susan Kare is an artist and designer best known for creating
+  <a href="#" class="icons1 frame-link1 underline font-hl link">UI elements</a>
+  and typefaces for the first Apple Macintosh from 1983 to 1986.
 </p>
+<p class="inter f4 fw4 lh-copy">
+  Kare was working as a sculptor and curator when her high-school friend Andy
+  Hertzfeld asked her to create
+  <a href="#" class="icons2 frame-link2 underline font-hl link">graphics</a> for
+  a new computer that he was working on in California.
+</p>
+<p class="inter f4 fw4 lh-copy">
+  “It just so happened that I had
+  <a href="#" class="bitmap frame-link3 underline font-hl link"
+    >small black and white grids</a
+  >
+  to work with. The process reminded me of working needlepoint, knitting
+  patterns or mosaics. I was lucky to have had a mother who enjoyed crafts.”<br />—Susan
+  Kare
+</p>
+
+<script type="text/javascript">
+  var img = document.querySelector("img.frame-image");
+  var aTag1 = document.querySelector("a.frame-link1");
+  var aTag2 = document.querySelector("a.frame-link2");
+  var aTag3 = document.querySelector("a.frame-link3");
+
+  var icons1 = document.querySelector("a.icons1");
+  var icons2 = document.querySelector("a.icons2");
+  var bitmap = document.querySelector("a.bitmap");
+
+  icons1.addEventListener("mouseover", function () {
+    img.src = "/assets/img/icons1.png";
+  });
+  icons2.addEventListener("mouseover", function () {
+    img.src = "/assets/img/icons2.png";
+  });
+  bitmap.addEventListener("mouseover", function () {
+    img.src = "/assets/img/bitmap.png";
+  });
+
+  aTag1.addEventListener("mouseleave", function () {
+    img.src = "/assets/img/{{page.frame}}";
+  });
+  aTag2.addEventListener("mouseleave", function () {
+    img.src = "/assets/img/{{page.frame}}";
+  });
+  aTag3.addEventListener("mouseleave", function () {
+    img.src = "/assets/img/{{page.frame}}";
+  });
+</script>

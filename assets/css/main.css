@@ -14,14 +14,34 @@
   font-weight: 400;
 }
 @font-face {
-  src: url(assets/css/fonts/SportingGrotesque-Regular.otf);
+  src: url(fonts/SportingGrotesque-Regular.otf);
   font-family: sporting;
   font-weight: 400;
 }
 @font-face {
-  src: url(assets/css/fonts/SportingGrotesque-Bold.otf);
+  src: url(fonts/SportingGrotesque-Bold.otf);
   font-family: sporting-bold;
   font-weight: 700;
+}
+@font-face {
+  src: url(fonts/misterpixelregular.otf);
+  font-family: mister;
+  font-weight: 400;
+}
+@font-face {
+  src: url(fonts/misterpixeltools.otf);
+  font-family: mister-tools;
+  font-weight: 400;
+}
+@font-face {
+  src: url(fonts/steps-mono.otf);
+  font-family: steps;
+  font-weight: 400;
+}
+@font-face {
+  src: url(fonts/spiralsorcerer.ttf);
+  font-family: spiral;
+  font-weight: 400;
 }
 @import url("https://rsms.me/inter/inter.css");
 html {
@@ -77,8 +97,14 @@ h1 {
   transition: 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 a:hover,
-h1:hover {
+h1:hover,
+a:focus,
+h1:focus {
   color: var(--hover);
+}
+ol a:focus {
+  font-size: 22px;
+  line-height: 2;
 }
 
 .inter {
@@ -96,12 +122,24 @@ h1:hover {
 .sporting-bold {
   font-family: "sporting-bold", sans-serif;
 }
+.mister {
+  font-family: "mister", sans-serif;
+}
+.mister-tools {
+  font-family: "mister-tools", sans-serif;
+}
+.steps {
+  font-family: "steps", sans-serif;
+}
 
 .inter-var {
   font-family: "inter-var", sans-serif;
 }
 .nikukyu {
   font-family: "nikukyu", sans-serif;
+}
+.spiral {
+  font-family: "spiral", sans-serif;
 }
 
 .stretch {

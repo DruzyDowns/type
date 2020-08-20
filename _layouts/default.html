@@ -10,7 +10,7 @@ head.html -%}
           <div class="">
             <a href="{{ site.url }}" class="link">
               <h1
-                class="{{ page.font }} f1 fw4 pb0 mt3 mb1 font-hl ttu tracked"
+                class="{{ page.font }} f2 fw4 pb0 mt3 mb1 font-hl ttu tracked"
               >
                 {{ page.headline }}
               </h1>
@@ -19,11 +19,11 @@ head.html -%}
           <div class="hide-child flex">
             <a
               href="/{{ page.prev }}"
-              class="child f1 font-hl f1 mt3 mb1 link mr3 pointer"
+              class="{{ page.font }} child f2 font-hl f1 mt3 mb1 link mr3 pointer"
               ><</a
             >
             <a href="/{{ page.next }}" class="link pointer">
-              <h1 class="font-hl f1 mt3 mb1">{{ page.num }}</h1>
+              <h1 class="{{ page.font }} font-hl f2 mt3 mb1">{{ page.num }}</h1>
             </a>
           </div>
         </div>

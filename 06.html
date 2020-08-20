@@ -1,17 +1,53 @@
 ---
 layout: default
-font: sporting
-headline: Digital Type Design
-frame: univers.jpg
-caption: univers
+font: nikukyu
+headline: デジタルタイプデザイン
+frame: palatino-italic-bold-char-map.PNG
+caption: Palatino Linotype Glyphs
 num: "06"
 next: "07"
 prev: "05"
+japanese: true
 ---
 
 <h3 class="sporting-bold f3 mt0 ttu tracked lh-title">
-  Dingbats, Wingdings, and Webdings
+  Palatino and hidden glyphs
 </h3>
-<p class="sporting f4 fw4 lh-copy">
-  In which we will discuss Dingbats, Wingdings, and Webdings
+<p class="inter f4 fw4 lh-copy">
+  Palatino Linotype, since its design in 1950 has become one of the world's most
+  widely used typefaces. Zapf drew numerous additional characters to include an
+  extensive range of ligatures and characters.
 </p>
+<p class="inter f4 fw4 lh-copy">
+  The replacement character � is a symbol found in the Unicode used to indicate
+  problems when a system is unable to render a stream of data to a correct
+  symbol.
+</p>
+<p class="inter f4 fw4 lh-copy">
+  <a href="#" class="glyphs frame-link1 underline font-hl link">Extra glyphs</a>
+  are present in most fonts, but they are seldom as interesting as
+  <a href="#" class="visitor frame-link2 underline font-hl link">this one</a>.
+</p>
+
+<script type="text/javascript">
+  var img = document.querySelector("img.frame-image");
+  var aTag1 = document.querySelector("a.frame-link1");
+  var aTag2 = document.querySelector("a.frame-link2");
+
+  var glyphs = document.querySelector("a.glyphs");
+  var visitor = document.querySelector("a.visitor");
+
+  glyphs.addEventListener("mouseover", function () {
+    img.src = "/assets/img/palatino-glyphs.png";
+  });
+  visitor.addEventListener("mouseover", function () {
+    img.src = "/assets/img/earthAlien.png";
+  });
+
+  aTag1.addEventListener("mouseleave", function () {
+    img.src = "/assets/img/{{page.frame}}";
+  });
+  aTag2.addEventListener("mouseleave", function () {
+    img.src = "/assets/img/{{page.frame}}";
+  });
+</script>
