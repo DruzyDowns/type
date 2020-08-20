@@ -72,6 +72,15 @@ html.is-animating .transition-fade {
   border-color: var(--main-border: #fff);
 }
 
+a,
+h1 {
+  transition: 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+a:hover,
+h1:hover {
+  color: var(--hover);
+}
+
 .inter {
   font-family: "Inter", sans-serif;
 }
